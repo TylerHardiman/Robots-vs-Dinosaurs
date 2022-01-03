@@ -1,18 +1,15 @@
-class robots:
-    def robots(self):
-         self.guy = True
-         self.pal = True
-         self.friend = True
+from weapon import Weapon
 
-def robots(self):
-    self.guy == True
-print('Guy at your service!')
-        
-            
-def robots(self):
-        if self.pal == True:
-            print('Pal at your service!:', self.pal)
+class Robot:
+        def __init__(self, name):
+            self.name = name
+            self.health = 100
+            self.weapon = Weapon("Sword", 25)
 
-def robots(self):
-        if self.friend == True:
-            print('Friend at your service!:', self.friend)
+
+        #this attack funciton will hold the logic for this specific robot to attack a specific dino we pass in when calling the function     EXMPLE robot_one.attack(dino_one)
+        def attack(self, dinosaur):
+            print(self.weapon.attack_power)
+            pass
+
+
