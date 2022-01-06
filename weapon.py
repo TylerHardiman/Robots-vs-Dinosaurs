@@ -4,4 +4,5 @@ class Weapon:
             self.name = name
             self.sword_attack = sword_attack
 
+
          

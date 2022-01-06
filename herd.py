@@ -14,6 +14,4 @@ class Herd:
             self.dinosaur.append(dinosaur_two)
             self.dinosaur.append(dinosaur_three)
 
-        def attack(self, robot):
-            self.robot = self.robot - self.attack_power
-            print(f'{self.name} has attacked {robot} and did {self.attack_power} damage, {robot.name} has {robot.health} remaining')
+        

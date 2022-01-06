@@ -1,32 +1,19 @@
-from herd import Herd
-from fleet import Fleet
+# def robo_and_dino_opponent_options():
+#       show_robo_opponent_options == True
+#       while show_robo_opponent_options is True:
+#         if show_robo_opponent_options == False:
+#             Herd == True
+#             print(input(f'{Dinosaur} is your current team selection and {show_robo_opponent_options}'))
+#         else:
+#           print(input(f'{Robot} is your current team selection and {show_robo_opponent_options}'))
 from battlefield import Battlefield
 
 battlefield = Battlefield()
 battlefield.run_game()
 battlefield.display_welcome()
-battlefield.dinosaur_attack()
-if Herd == 0:
-    dinosaur_attack = False
-    while dinosaur_attack is False:
-      if Herd > 0:
-        dinosaur_attack = True
-        print('!')
-        continue    
-    else:    
-      Herd == 0
-      print('Dinosaurs have lost!')
-
-battlefield.robo_attack
-if len(Fleet()) == 0:
-      robo_attack = False
-while robo_attack is False:
-      if Fleet() > 0:
-        robo_attack = True
-        print('!')
-        continue    
-else:    
-      Fleet() == 0
-      print('Robots have lost!')
-battlefield.show_robo_opponent_options()
-battlefield.show_dino_opponent_options()
+battlefield.battle()
+battlefield.show_robo_opponents()
+battlefield.dino_turn()
+battlefield.show_dino_opponents()
+battlefield.robot_turn()
+battlefield.display_winners()
